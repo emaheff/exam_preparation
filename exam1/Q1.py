@@ -1,8 +1,9 @@
 def is_serpertine(mat):
     if not mat:
         return False
-    if len(mat) != len(mat[0]):
-        return False
+    for i in range(len(mat)):
+        if len(mat) != len(mat[i]):
+            return False
 
     expected = 1 - len(mat)
 

@@ -50,7 +50,7 @@ class Date:
 
     def __eq__(self, other):
         if isinstance(other, Date):
-            return self._year == other._year and self._month == other._month and self._day == other._day
+            return self._year == other.get_year() and self._month == other.get_month() and self._day == other.get_day()
         return NotImplemented
 
 
@@ -95,7 +95,7 @@ class Order:
 
     def __gt__(self, other):
         if isinstance(other, Order):
-            return other._cost > self._cost
+            return other.get_cost() > self._cost
         return NotImplemented
 
 
@@ -110,7 +110,7 @@ class CashRegister:
     def monthly_total_income(self, month):
         income = 0
         for order in self._orders:
-            if order.get_month() == month:
+            if order.get_date().get_month() == month:
                 income += order.get_cost()
         return income
 
