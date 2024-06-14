@@ -1,0 +1,1 @@
+This repository is a work in progress and includes my attempts at solving Python programming exercises. I haven't deeply checked or optimized all my solutions, so feedback and suggestions for improvement are highly encouraged and appreciated!
