@@ -5,23 +5,12 @@ class Date:
         self._month = m
         self._year = y
 
-    def get_day(self):
-        return self._day
-
-    def get_month(self):
-        return self._month
-
-    def get_year(self):
-        return self._year
-
-    def set_day(self, day):
-        self._day = day
-
-    def set_month(self, month):
-        self._month = month
-
-    def set_year(self, year):
-        self._year = year
+    def get_day(self): return self._day
+    def get_month(self): return self._month
+    def get_year(self): return self._year
+    def set_day(self, day): self._day = day
+    def set_month(self, month): self._month = month
+    def set_year(self, year): self._year = year
 
     def __str__(self):
         return f"({self._day}.{self._month}.{self._year}"
@@ -48,23 +37,12 @@ class Person:
         self._id = id
         self._birth = b_day
 
-    def get_name(self):
-        return self._name
-
-    def get_id(self):
-        return self._id
-
-    def get_birth(self):
-        return self._birth
-
-    def set_name(self, name):
-        self._name = name
-
-    def set_id(self, id):
-        self._id = id
-
-    def set_birth(self, birth):
-        self._birth = birth
+    def get_name(self): return self._name
+    def get_id(self): return self._id
+    def get_birth(self): return self._birth
+    def set_name(self, name): self._name = name
+    def set_id(self, id): self._id = id
+    def set_birth(self, birth): self._birth = birth
 
     def __str__(self):
         return f"name: {self._name}\nid: {self._id}\nbirth day: {self._birth}"
